@@ -6,7 +6,7 @@
   "keywords": [
   ],
   "activationCommands": {
-    "atom-workspace": "inuktag:toggle"
+    "atom-workspace": "inuktag:tag_morpheme"
   },
   "repository": "https://github.com/atom/inuktag",
   "license": "MIT",

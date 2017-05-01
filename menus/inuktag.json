@@ -2,8 +2,12 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle inuktag",
-        "command": "inuktag:toggle"
+        "label": "Tag morphemes",
+        "command": "inuktag:tag_morpheme"
+      },
+      {
+        "label": "Create %mor line",
+        "command": "inuktag:create_mor"
       }
     ]
   },
@@ -15,8 +19,12 @@
           "label": "inuktag",
           "submenu": [
             {
-              "label": "Toggle",
-              "command": "inuktag:toggle"
+              "label": "Tag Morphemes",
+              "command": "inuktag:tag_morpheme"
+            },
+            {
+              "label": "Create %mor line",
+              "command": "inuktag:create_mor"
             }
           ]
         }
