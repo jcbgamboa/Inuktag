@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle inuktag",
+        "command": "inuktag:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "inuktag",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "inuktag:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
