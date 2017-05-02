@@ -21,7 +21,7 @@ The file `keymaps/inuktag.json` contains the keyboard shortcuts for the
 functionalities provided by the plugin. By default, they are:
 
  * ctrl+shift+space: Tags current morpheme
- * ctrl+enter: Copies the current line into a %mor tier
+ * ctrl+i: Copies the current line into a %mor tier
  * ctrl+shift+e: Shows dictionary
 
 (actually, these functions are not doing a lot so far. Hopefully they will soon)
