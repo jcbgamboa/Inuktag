@@ -5,7 +5,6 @@
   "description": "A short description of your package",
   "keywords": [],
   "activationCommands": {
-    "atom-workspace": "inuktag:tag_morpheme"
   },
   "repository": "https://github.com/atom/inuktag",
   "license": "MIT",

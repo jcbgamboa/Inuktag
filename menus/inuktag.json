@@ -8,6 +8,10 @@
       {
         "label": "Create %mor line",
         "command": "inuktag:create_mor"
+      },
+      {
+        "label": "Toggle right panel",
+        "command": "inuktag:toggle_dict_panel"
       }
     ]
   },
@@ -25,6 +29,10 @@
             {
               "label": "Create %mor line",
               "command": "inuktag:create_mor"
+            },
+            {
+              "label": "Toggle right panel",
+              "command": "inuktag:toggle_dict_panel"
             }
           ]
         }
