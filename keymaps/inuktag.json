@@ -1,6 +1,5 @@
 {
   "atom-workspace": {
-    "ctrl-shift-space": "inuktag:tag_morpheme",
     "ctrl-i": "inuktag:create_mor",
     "ctrl-shift-e": "inuktag:toggle_dict_panel"
   }
