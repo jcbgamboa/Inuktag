@@ -18,6 +18,9 @@
     }
   },
   "dependencies": {
-    "interact.js": "^1.2.5"
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-resizable-box": "^2.0.4",
+    "sb-react-table": "^1.0.1"
   }
 }
