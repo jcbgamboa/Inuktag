@@ -13,6 +13,10 @@ Download the entire code into a folder called `inuktag` inside
 the corresponding glosses (they are not included here to prevent copyright
 issues). You should put it in `inuktag/lib/data/dict.txt`.
 
+*TODO*: explain that `interact.js` is necessary for showing the panel with the
+dictionary, and how to install it. Without it, it was not possible to resize
+that pane.
+
 Now just open Atom and the plugin should be accessible.
 
 # Using
