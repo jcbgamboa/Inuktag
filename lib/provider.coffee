@@ -24,13 +24,17 @@ module.exports =
     @dict_data = dict_data
 
   getSuggestions: (options) ->
-    { prefix } = options
-    ret = @findMatchingSuggestions(prefix)
+    { prefix, activatedManually } = options
+    ret = @findMatchingSuggestions(prefix, activatedManually)
     return ret;
 
-  findMatchingSuggestions: (prefix) ->
-    matchingSuggestions = dict_data.filter((elem) -> elem[0].startsWith(prefix))
-    console.log(matchingSuggestions);
+  findMatchingSuggestions: (prefix, activatedManually) ->
+    matchingSuggestions = []
+
+    if prefix.length > 4 or activatedManually
+      matchingSuggestions = dict_data.filter((elem) -> elem[0].startsWith(prefix))
+      console.log(matchingSuggestions);
+
     return matchingSuggestions.map(@inflateSuggestion);
 
   inflateSuggestion: (elem) -> { text: elem[1] }
