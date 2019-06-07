@@ -31,9 +31,34 @@ module.exports =
   findMatchingSuggestions: (prefix, activatedManually) ->
     matchingSuggestions = []
 
-    if prefix.length > 4 or activatedManually
+    if prefix == "lng"
+      matchingSuggestions = [
+        ["lng", "lng:IKT"],
+        ["lng", "lng:ENG"],
+        ["lng", "lng:IKT,ENG"]
+      ]
+    else if prefix == "type"
+      matchingSuggestions = [
+        ["type", "type:own"],
+        ["type", "type:part"],
+        ["type", "type:kin"],
+        ["type", "type:LNR"],
+        ["type", "type:abs"]
+      ]
+    else if prefix == "order"
+      matchingSuggestions = [
+        ["order", "order:Pr"],
+        ["order", "order:Pe"],
+        ["order", "order:Pe,Pr"],
+        ["order", "order:Pr,Pe"],
+        ["order", "order:Pr,Pr,Pe"]
+      ]
+    else if prefix.length > 4 or activatedManually
       matchingSuggestions = dict_data.filter((elem) -> elem[0].startsWith(prefix))
-      console.log(matchingSuggestions);
+
+    # Only prints something if `matchingSuggestions` is not empty
+    if matchingSuggestions.length
+      console.log(matchingSuggestions)
 
     return matchingSuggestions.map(@inflateSuggestion);
 
