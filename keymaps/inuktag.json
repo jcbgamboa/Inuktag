@@ -1,6 +1,7 @@
 {
   "atom-workspace": {
     "ctrl-i": "inuktag:create_mor",
-    "ctrl-shift-e": "inuktag:toggle_dict_panel"
+    "ctrl-shift-e": "inuktag:toggle_dict_panel",
+    "ctrl-p": "inuktag:create_xpos"
   }
 }

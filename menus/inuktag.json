@@ -25,6 +25,10 @@
             {
               "label": "Toggle right panel",
               "command": "inuktag:toggle_dict_panel"
+            },
+            {
+              "label": "Create %xpos line",
+              "command": "inuktag:create_xpos"
             }
           ]
         }
