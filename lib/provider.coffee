@@ -43,7 +43,8 @@ module.exports =
         ["type", "type:part"],
         ["type", "type:kin"],
         ["type", "type:LNR"],
-        ["type", "type:abs"]
+        ["type", "type:abs"],
+        ["type", "type:asc"]
       ]
     else if prefix == "order"
       matchingSuggestions = [
@@ -51,7 +52,16 @@ module.exports =
         ["order", "order:Pe"],
         ["order", "order:Pe,Pr"],
         ["order", "order:Pr,Pe"],
-        ["order", "order:Pr,Pr,Pe"]
+        ["order", "order:Pr1a,Pr2a"],
+        ["order", "order:Pr1a,Pr2b"],
+        ["order", "order:Pe1a,Pe2a"],
+        ["order", "order:Pe1a,Pe2b"],
+        ["order", "order:Pr1a,Pr2a,Pe"],
+        ["order", "order:Pr1a,Pr2b,Pe"],
+        ["order", "order:Pr1a,Pr2a,Pe1a,Pe2a"],
+        ["order", "order:Pr1a,Pr2a,Pe1a,Pe2b"],
+        ["order", "order:Pr1a,Pr2b,Pe1a,Pe2a"],
+        ["order", "order:Pr1a,Pr2b,Pe1a,Pe2b"]
       ]
     else if prefix.length > 4 or activatedManually
       matchingSuggestions = dict_data.filter((elem) -> elem[0].startsWith(prefix))
